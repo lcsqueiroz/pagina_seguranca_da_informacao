@@ -1,0 +1,12 @@
+.about {
+  padding: 100px 0px;
+}
+
+.about__title {
+  padding: 15px 0px;
+  font-size: 50px;
+}
+.about__description {
+  padding: 10px 0px;
+  font-size: 20px;
+}

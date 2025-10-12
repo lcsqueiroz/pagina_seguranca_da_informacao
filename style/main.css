@@ -1,0 +1,16 @@
+@import url(base/_variables.css);
+@import url(base/_reset.css);
+@import url(base/_base.css);
+
+@import url(components/_buttons.css);
+@import url(components/_cards.css);
+
+@import url(layout/_layout.css);
+@import url(layout/_grid.css);
+@import url(layout/_respostive.css);
+
+@import url(sections/_header.css);
+@import url(sections/_hero.css);
+@import url(sections/_about.css);
+@import url(sections/_courses.css);
+@import url(sections/_footer.css);
