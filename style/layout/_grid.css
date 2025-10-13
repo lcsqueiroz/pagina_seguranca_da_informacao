@@ -11,3 +11,10 @@
   justify-self: center;
   gap: 50px;
 }
+
+.grid-learn-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  align-items: stretch;
+}

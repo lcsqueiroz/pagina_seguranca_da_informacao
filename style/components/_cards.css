@@ -4,8 +4,6 @@
   justify-content: center;
   text-align: center;
   gap: 10px;
-}
-.card {
   height: 150px;
   width: 200px;
   border: 1px solid #e2e8f0;
@@ -15,6 +13,39 @@
   -moz-box-shadow: 1px 1px 10px 0px var(--shadow-color);
 }
 
+.card img {
+  height: 50px;
+}
 .card__title {
   font-weight: 700;
+}
+/* Card de aprendizado */
+.learn__card {
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.learn__card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.learn__card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.learn__card-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
