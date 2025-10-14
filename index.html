@@ -26,79 +26,150 @@
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item"><a href="#">Home</a></li>
-          <li class="header__nav-item"><a href="#">Aprenda Mais</a></li>
-          <li class="header__nav-item"><a href="#">Sobre Nós</a></li>
+          <li class="header__nav-item"><a href="#learn">Aprenda Mais</a></li>
+          <li class="header__nav-item"><a href="#features">Sobre Nós</a></li>
         </ul>
       </nav>
       <div class="header__actions">
-        <a href="" class="button button--primary">Quizz</a>
+        <a href="#quiz" class="button button--primary">Quizz</a>
       </div>
     </div>
   </header>
+
   <main class="main">
     <section class="hero">
-      <div class="hero__container max-width">
+      <div class="hero__container">
         <h1 class="hero__title">Segurança aos Idosos Contra Crimes Cibernéticos no Brasil</h1>
         <p class="hero__subtitle">Aprenda os fundamentos da segurança da informação de forma simples e eficaz. Proteja seus dados e sua privacidade online.</p>
         <div class="hero__actions">
-          <a href="#" class="button button--primary">Teste seu conhecimento</a>
+          <a href="#quiz" class="button button--primary">Teste seu conhecimento</a>
         </div>
       </div>
     </section>
-    <article class="about">
-      <div class="about__container grid-2-columns max-width">
-        <div class="about__content">
-          <h2 class="about__title">Por que a segurança da Informação é importante?</h2>
-          <p class="about__description">No mundo digital, a segurança da informação é crucial. Ela protege suas informações pessoais e financeiras contra ameaças online, como hackers e fraudes. Com o SecurePath, você aprenderá a identificar e evitar riscos, garantindo uma experiência online mais segura.</p>
+
+    <section id="features" class="features">
+      <div class="features__container grid-2-columns max-width">
+        <div class="features__text-content">
+          <h2 class="features__title">Por que a segurança da Informação é importante?</h2>
+          <p class="features__description">No mundo digital, a segurança da informação é crucial. Ela protege suas informações pessoais e financeiras contra ameaças online, como hackers e fraudes. Com o SecurePath, você aprenderá a identificar e evitar riscos, garantindo uma experiência online mais segura.</p>
         </div>
-        <div class="about__cards grid-cards">
+        <div class="features__grid grid-cards">
           <div class="card">
-            <img src="assets/svg/cards/shield.svg" alt="">
+            <img class="card__icon" src="assets/svg/cards/shield.svg" alt="Ícone de escudo">
             <span class="card__title">Fundamentos</span>
           </div>
           <div class="card">
-            <img src="assets/svg/cards/password.svg" alt="">
+            <img class="card__icon" src="assets/svg/cards/password.svg" alt="Ícone de cadeado">
             <span class="card__title">Senhas</span>
           </div>
           <div class="card">
-            <img src="assets/svg/cards/privacy.svg" alt="">
+            <img class="card__icon" src="assets/svg/cards/privacy.svg" alt="Ícone de privacidade">
             <span class="card__title">Privacidade</span>
           </div>
           <div class="card">
-            <img src="assets/svg/cards/protection.svg" alt="">
+            <img class="card__icon" src="assets/svg/cards/protection.svg" alt="Ícone de proteção">
             <span class="card__title">Proteção</span>
           </div>
         </div>
       </div>
-    </article>
-    <article class="learn max-width">
+    </section>
+
+    <section id="learn" class="learn max-width">
       <h2 class="learn__title">Aprenda Mais</h2>
-      <p class="learn__description">Preparamos guias simples para ajudar você, sua família e amigos a se protegerem na internet. Clique em um tema para começar a aprender!
-      </p>
-      <div class="learn__card-container grid-learn-cards">
-        <div class="learn__card">
-          <img class="learn__card-img" src="assets/image/learn/password.jpg" alt="">
-          <h3 class="learn__card-title">Crie Senhas Fortes</h3>
-          <p class="learn__card-description">Sua senha é a chave da sua casa online. Vamos te ensinar a criar chaves que só você conhece e são difíceis de copiar.</p>
+      <p class="learn__description">Preparamos guias simples para ajudar você, sua família e amigos a se protegerem na internet. Clique em um tema para começar a aprender!</p>
+      <div class="learn__grid grid-learn-cards">
+        <!-- Card 1 -->
+        <div class="card card--learn" data-modal-trigger="modal-senhas"> <!--Direciona ao ID do modal-->
+          <img class="card__image" src="assets/image/learn/password.jpg" alt="Mulher usando notebook">
+          <div class="card__content">
+            <h3 class="card__title">Crie Senhas Fortes</h3>
+            <p class="card__description">Sua senha é a chave da sua casa online. Vamos te ensinar a criar chaves que só você conhece e são difíceis de copiar.</p>
+          </div>
         </div>
-        <div class="learn__card">
-          <img class="learn__card-img" src="assets/image/learn/safeweb.jpeg" alt="">
-          <h3 class="learn__card-title">Navegue com Cuidado</h3>
-          <p class="learn__card-description">A internet é como uma cidade grande. Mostraremos as ruas seguras para passear e quais lugares é melhor evitar.</p>
+        <!-- Card 2 -->
+        <div class="card card--learn" data-modal-trigger="modal-navegacao">
+          <img class="card__image" src="assets/image/learn/safeweb.jpeg" alt="Homem mexendo em um tablet">
+          <div class="card__content">
+            <h3 class="card__title">Navegue com Cuidado</h3>
+            <p class="card__description">A internet é como uma cidade grande. Mostraremos as ruas seguras para passear e quais lugares é melhor evitar.</p>
+          </div>
         </div>
-        <div class="learn__card">
-          <img class="learn__card-img" src="assets/image/learn/phishing.jpg" alt="">
-          <h3 class="learn__card-title">Proteja suas Redes Sociais</h3>
-          <p class="learn__card-description">Use o Facebook e o WhatsApp com segurança. Saiba o que compartilhar e como manter suas conversas e fotos só para quem você quer.</p>
+        <!-- Card 3 -->
+        <div class="card card--learn" data-modal-trigger="modal-redes-sociais">
+          <img class="card__image" src="assets/image/learn/phishing.jpg" alt="Tela de celular com alerta de phishing">
+          <div class="card__content">
+            <h3 class="card__title">Proteja suas Redes Sociais</h3>
+            <p class="card__description">Use o Facebook e o WhatsApp com segurança. Saiba o que compartilhar e como manter suas conversas e fotos só para quem você quer.</p>
+          </div>
         </div>
       </div>
-    </article>
-    <section class="quizz max-width">
-      <h2 class="quizz__title">Teste seu conhecimento</h2>
-      <p class="quizz__description">Acesse nosso quizz para testar seu conhecimento a respeito dos tópicos referentes a segurança da informação.</p>
-      <a href="#" class="button-white button--primary">Acessar Quizz</a>
+
+    </section>
+
+    <section id="quiz" class="quiz">
+      <h2 class="quiz__title">Teste seu conhecimento</h2>
+      <p class="quiz__description">Acesse nosso quizz para testar seu conhecimento a respeito dos tópicos referentes a segurança da informação.</p>
+      <a href="#" class="button button--secondary">Acessar Quizz</a>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="footer__container max-width">
+      <a href="#">
+        <img class="footer__logo" src="assets/svg/logo/logo-escuro.svg" alt="Logomarca do Site">
+      </a>
+      <p class="footer__copyright">&copy; 2025 SecurePath. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Modal Senhas -->
+  <dialog class="modal" id="modal-senhas">
+    <div class="modal__content">
+      <div class="modal__header">
+        <h2 class="modal__title">Crie Senhas Fortes</h2>
+        <button class="modal__close-button" autofocus>&times;</button>
+      </div>
+      <div class="modal__body">
+        <p>Criar senhas fortes começa escolhendo combinações longas e imprevisíveis. Prefira senhas com pelo menos 12 a 16 caracteres, misturando letras maiúsculas e minúsculas, números e símbolos. Evite palavras do dicionário, datas de aniversário, nomes de familiares ou padrões do teclado (como 123456 ou qwerty). Uma técnica simples é usar uma “frase-senha”: junte palavras sem relação entre si e inclua variações, por exemplo: “Rio!Lento_42PianoVerde”.</p>
+        <p>Use senhas diferentes para cada serviço importante (e-mail, banco, redes sociais). Assim, se uma senha vazar, as outras continuam protegidas. Para tornar isso viável, utilize um gerenciador de senhas: ele cria senhas complexas automaticamente e guarda tudo com segurança. Você só precisa lembrar uma única senha-mestra forte para acessar o cofre do gerenciador.</p>
+        <p>Ative a autenticação em dois fatores (2FA) sempre que possível. Esse recurso pede um segundo passo de verificação (código por aplicativo, biometria ou chave física) e dificulta o acesso de invasores, mesmo que descubram sua senha. Revise suas senhas a cada 6 a 12 meses, trocando as mais antigas ou reutilizadas, e desconfie de e-mails ou mensagens que pedem “confirmação de senha”. Senhas fortes, únicas e aliadas ao 2FA elevam muito sua segurança online.</p>
+        <img src="assets/image/learn/password.jpg" alt="Mulher usando notebook">
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modal Navegação -->
+  <dialog class="modal" id="modal-navegacao">
+    <div class="modal__content">
+      <div class="modal__header">
+        <h2 class="modal__title">Navegue com Cuidado</h2>
+        <button class="modal__close-button">&times;</button>
+      </div>
+      <div class="modal__body">
+        <p>Antes de clicar, pare e verifique. Golpes online costumam usar urgência (“sua conta será bloqueada”) ou vantagens exageradas (“prêmio imperdível”) para induzir cliques. Passe o mouse sobre links para ver o endereço real, confirme se o site usa HTTPS e desconfie de anexos inesperados. Ao receber mensagens de bancos, lojas ou órgãos públicos, não clique em links: acesse o site digitando o endereço no navegador ou confirme pelo telefone oficial.</p>
+        <p>Mantenha seus dispositivos e navegador protegidos. Ative atualizações automáticas do sistema e dos aplicativos; elas corrigem falhas de segurança. Use antivírus confiável, baixe apps apenas das lojas oficiais e instale extensões do navegador com moderação. Evite realizar operações sensíveis (banco, compras) em redes Wi‑Fi públicas. Se precisar usá-las, prefira uma VPN para criptografar sua conexão.</p>
+        <p>Cuide da sua privacidade enquanto navega. Ajuste as permissões de cookies, use navegação privada em computadores compartilhados e saia das suas contas ao terminar. Desconfie de pop-ups pedindo permissões amplas ou acesso remoto. Reveja o que você compartilha nas redes: não exponha dados pessoais, rotinas ou documentos. Em caso de dúvida, não forneça informações — procure o canal oficial da empresa para confirmar a legitimidade da solicitação.</p>
+        <img src="assets/image/learn/safeweb.jpeg" alt="Homem mexendo em um tablet">
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modal Redes Sociais -->
+  <dialog class="modal" id="modal-redes-sociais">
+    <div class="modal__content">
+      <div class="modal__header">
+        <h2 class="modal__title">Proteja suas Redes Sociais</h2>
+        <button class="modal__close-button">&times;</button>
+      </div>
+      <div class="modal__body">
+        <p>Comece fortalecendo o acesso às suas contas. Crie uma senha longa e única para cada rede social e ative a autenticação em dois fatores (2FA) por aplicativo autenticador ou chave física. Atualize seus dados de recuperação (e‑mail e telefone) e verifique regularmente a seção “Dispositivos/Atividade de login” para desconectar acessos desconhecidos. Desconfie de pedidos para “confirmar sua conta” por links em mensagens — acesse a rede social pelo aplicativo oficial ou digitando o endereço no navegador.</p>
+        <p>Ajuste as configurações de privacidade. Limite quem pode ver suas publicações, sua lista de amigos/seguidores e quem pode marcar você em fotos. Desative a indexação do seu perfil por mecanismos de busca quando possível e revise permissões de aplicativos conectados (jogos, quizzes, sites) — remova os que não usa. Evite compartilhar dados sensíveis como endereço, documentos, rotina e informações financeiras. Quanto menos exposição, menor o risco de golpes e engenharia social.</p>
+        <p>Fique atento a golpes comuns. Desconfie de perfis clonados de amigos pedindo dinheiro, “oportunidades” de investimento rápidas ou mensagens com links suspeitos. Confirme com a pessoa por outra via (ligação) antes de transferir valores. Não compartilhe códigos recebidos por SMS ou e‑mail; nenhum suporte legítimo pede esses códigos. Em caso de invasão, troque a senha imediatamente, revogue sessões ativas, ative o 2FA e use os canais de recuperação da plataforma para recuperar o controle e reportar o incidente.</p>
+        <img src="assets/image/learn/phishing.jpg" alt="Tela de celular com alerta de phishing">
+      </div>
+    </div>
+  </dialog>
+
 </body>
 
 </html>

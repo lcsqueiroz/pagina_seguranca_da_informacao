@@ -1,0 +1,15 @@
+.features {
+  padding: 50px 0px;
+  background-color: var(--white-color);
+}
+
+.features__title {
+  padding: 15px 0px;
+  font-size: 50px;
+}
+
+.features__description {
+  padding: 10px 0px;
+  font-size: 20px;
+  max-width: 60ch;
+}

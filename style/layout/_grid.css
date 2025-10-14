@@ -4,7 +4,7 @@
   place-items: center;
 }
 
-.grid-cards {
+.features__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -12,7 +12,7 @@
   gap: 50px;
 }
 
-.grid-learn-cards {
+.learn__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;

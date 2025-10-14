@@ -1,51 +1,63 @@
+/* Base Card Style */
 .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   gap: 10px;
-  height: 150px;
-  width: 200px;
   border: 1px solid #e2e8f0;
   border-radius: 8px;
+  background-color: var(--white-color);
   box-shadow: 1px 1px 10px 0px var(--shadow-color);
   -webkit-box-shadow: 1px 1px 10px 0px var(--shadow-color);
   -moz-box-shadow: 1px 1px 10px 0px var(--shadow-color);
+  overflow: hidden;
 }
 
-.card img {
+.card__icon {
   height: 50px;
-}
-.card__title {
-  font-weight: 700;
-}
-/* Card de aprendizado */
-.learn__card {
-  background-color: #f2f2f2;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding-bottom: 20px;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: center;
+  object-fit: contain;
+  margin: 0 auto; /*Centraliza o ícone*/
 }
 
-.learn__card-img {
+.card__image {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  margin-bottom: 20px;
 }
 
-.learn__card-title {
+.card__title {
+  font-weight: 700;
   font-size: 20px;
-  margin-bottom: 10px;
+  padding: 0 15px;
 }
 
-.learn__card-description {
+.card__description {
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  padding: 0 15px 15px 15px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 15px;
+}
+
+.features__grid .card {
+  height: 150px;
+  width: 200px;
+}
+
+/* Efeito hover dos cards learn */
+.card--learn {
+  justify-content: flex-start;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card--learn:hover {
+  cursor: pointer;
+  transform: scale(1.025);
 }

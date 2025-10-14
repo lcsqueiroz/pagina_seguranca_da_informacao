@@ -1,0 +1,19 @@
+.footer {
+  padding: 40px 0px;
+  background-color: var(--header-bg-color);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  height: 40px;
+}
+
+.footer__copyright {
+  color: var(--font-text-color);
+  font-size: 14px;
+}

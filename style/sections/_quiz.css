@@ -1,0 +1,22 @@
+.quiz {
+  padding: 50px 0px;
+  background-color: #012d5c; /*Cor de fundo */
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  text-align: center;
+}
+
+.quiz__title {
+  font-size: 50px;
+  padding: 15px 0px;
+  color: #fbfbfb; /*Cor de título*/
+}
+
+.quiz__description {
+  font-size: 20px;
+  color: #9ab4d4; /*Cor de texto secundário*/
+  padding: 10px 0px;
+  padding-bottom: 30px;
+  max-width: 60ch;
+}

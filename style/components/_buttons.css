@@ -7,7 +7,6 @@
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-
   box-shadow: 4px 4px 10px 0px var(--shadow-color);
   -webkit-box-shadow: 4px 4px 10px 0px var(--shadow-color);
   -moz-box-shadow: 4px 4px 10px 0px var(--shadow-color);
@@ -17,21 +16,11 @@
   background-color: var(--primary-color-hover);
 }
 
-.button-white {
-  padding: 12px 24px;
-  border-radius: 8px;
+.button--secondary {
   background-color: #fbfbfb;
   color: #012d5c;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-
-  box-shadow: 4px 4px 10px 0px var(--shadow-color);
-  -webkit-box-shadow: 4px 4px 10px 0px var(--shadow-color);
-  -moz-box-shadow: 4px 4px 10px 0px var(--shadow-color);
 }
 
-.button:hover {
-  background-color: var(--primary-color-hover);
+.button--secondary:hover {
+  background-color: #e2e8f0;
 }
