@@ -6,12 +6,12 @@ dialog.modal {
   border-radius: 8px;
   max-width: 800px;
   width: 90%;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 20px var(--shadow-color);
 }
 
 /* Fundo (backdrop) quando o modal está aberto */
 dialog.modal::backdrop {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--backdrop-color);
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 }
@@ -32,7 +32,7 @@ dialog.modal::backdrop {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid var(--border-color);
   padding-bottom: 15px;
   margin-bottom: 20px;
 }

@@ -1,12 +1,15 @@
 :root {
   --font-family: Inter;
-  --font-title-color: #0f172a;
-  --font-text-color: #9ab4d4;
-
-  --primary-color: #012d5c;
-  --primary-color-hover: #48b5ec;
-  --header-bg-color: #f8f9fa;
-  --body-bg-color: #fbfbfb;
-  --white-color: #fbfbfb;
+  --font-title-color: #012D5C;
+  --font-text-color: #9AB4D4;
+  --white-color: #FBFBFB;
+  --body-bg-color: #FBFBFB;
   --shadow-color: rgba(0, 0, 0, 0.1);
+  --primary-color: #012D5C;
+  --primary-color-hover: #48b5ec;
+  --border-color: #e2e8f0;
+  --backdrop-color: rgba(0, 0, 0, 0.6);
+  --header-blur-bg-color: rgba(75, 75, 95, 0.3);
+  --modal-bg-color: rgba(0, 0, 0, 0.4);
+  --modal-content-bg-color: #d3d3d3;
 }

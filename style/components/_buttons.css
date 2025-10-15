@@ -17,10 +17,10 @@
 }
 
 .button--secondary {
-  background-color: #fbfbfb;
-  color: #012d5c;
+  background-color: var(--white-color);
+  color: var(--primary-color);
 }
 
 .button--secondary:hover {
-  background-color: #e2e8f0;
+  background-color: var(--border-color);
 }

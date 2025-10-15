@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--header-bg-color);
+  background-color: var(--white-color);
   position: fixed;
   width: 100%;
   top: 0;
@@ -33,8 +33,8 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(75, 75, 95, 0.3);
+  background-color: var(--header-blur-bg-color);
   backdrop-filter: blur(10px);
-  color: #fff;
+  color: var(--white-color);
   z-index: 3;
 }

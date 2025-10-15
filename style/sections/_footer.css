@@ -1,6 +1,6 @@
 .footer {
   padding: 25px 0px;
-  background-color: #fbfbfb;
+  background-color: var(--white-color);
 }
 
 .footer__container {
@@ -15,7 +15,7 @@
   gap: 40px;
 }
 .footer__nav-item {
-  color: #9ab4d4;
+  color: var(--font-text-color);
   font-size: 14px;
 }
 .footer__copyright {

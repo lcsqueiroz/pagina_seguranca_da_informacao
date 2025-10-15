@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   modalTriggers.forEach((trigger) => {
     const modalId = trigger.getAttribute("data-modal-trigger");
     const modal = document.getElementById(modalId);
+
     if (modal) {
       const closeModalButton = modal.querySelector(".modal__close-button");
 
