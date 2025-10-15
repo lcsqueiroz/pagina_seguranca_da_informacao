@@ -1,12 +1,12 @@
 :root {
   --font-family: Inter;
   --font-title-color: #0f172a;
-  --font-text-color: #475569;
+  --font-text-color: #9ab4d4;
 
   --primary-color: #012d5c;
   --primary-color-hover: #48b5ec;
   --header-bg-color: #f8f9fa;
-  --body-bg-color: #f6f7f8;
-  --white-color: #fff;
+  --body-bg-color: #fbfbfb;
+  --white-color: #fbfbfb;
   --shadow-color: rgba(0, 0, 0, 0.1);
 }

@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- Lógica do Modal com <dialog> ---
   const modalTriggers = document.querySelectorAll("[data-modal-trigger]");
 
+  //para cada modal na lista faça isso
   modalTriggers.forEach((trigger) => {
     const modalId = trigger.getAttribute("data-modal-trigger");
     const modal = document.getElementById(modalId);
-
     if (modal) {
       const closeModalButton = modal.querySelector(".modal__close-button");
 
