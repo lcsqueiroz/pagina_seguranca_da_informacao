@@ -1,5 +1,4 @@
 .quiz {
-  padding: 50px 0px;
   background-color: var(--primary-color); /*Cor de fundo */
   display: flex;
   flex-direction: column;

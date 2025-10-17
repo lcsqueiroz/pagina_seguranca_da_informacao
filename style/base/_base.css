@@ -1,6 +1,5 @@
 body {
   font-family: var(--font-family);
-  background-color: var(--body-bg-color);
 }
 
 h1,
@@ -11,9 +10,11 @@ h5,
 h6 {
   font-weight: bolder;
   color: var(--font-title-color);
+  line-height: 1.2;
 }
 
 p {
   font-weight: 400;
   color: var(--font-text-color);
+  line-height: 1.5;
 }

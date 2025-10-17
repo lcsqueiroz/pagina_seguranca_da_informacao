@@ -1,5 +1,4 @@
 .learn {
-  padding: 50px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +14,7 @@
   font-size: 20px;
   padding: 10px 0px;
   padding-bottom: 50px;
-  max-width: 80ch;
+  max-width: 70ch;
   margin: 0 auto;
 }
 

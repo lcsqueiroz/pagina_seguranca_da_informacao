@@ -10,8 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
       header.classList.toggle("header-blur", scrolled);
 
       if (scrolled) {
+        headerButton.classList.add("button--secondary");
+        headerButton.classList.add("button--secondary:hover");
         logo.src = "assets/svg/logo/logo-escuro.svg";
       } else {
+        headerButton.classList.remove("button--secondary");
+        headerButton.classList.remove("button--secondary:hover");
         logo.src = "assets/svg/logo/logo-claro.svg";
       }
     });

@@ -6,14 +6,14 @@
   text-align: center;
   gap: 10px;
   border: 1px solid var(--border-color);
-  border-radius: 8px;
-  background-color: var(--white-color);
+  border-radius: 4px;
+  background-color: #ffff;
   box-shadow: 1px 1px 10px 0px var(--shadow-color);
   -webkit-box-shadow: 1px 1px 10px 0px var(--shadow-color);
   -moz-box-shadow: 1px 1px 10px 0px var(--shadow-color);
   overflow: hidden;
+  color: var(--primary-color);
 }
-
 .card__icon {
   height: 50px;
   object-fit: contain;

@@ -9,10 +9,19 @@
 @import url(layout/_layout.css);
 @import url(layout/_grid.css);
 @import url(layout/_respostive.css);
+@import url(layout/_header.css);
+@import url(layout/_footer.css);
 
-@import url(sections/_header.css);
-@import url(sections/_hero.css);
-@import url(sections/_features.css);
-@import url(sections/_learn.css);
-@import url(sections/_quiz.css);
-@import url(sections/_footer.css);
+/* --- SECTIONS --- */
+
+/* Home */
+@import url(sections/home/_hero.css);
+@import url(sections/home/_features.css);
+@import url(sections/home/_learn.css);
+
+/* Quizz */
+@import url(sections/quizz/_quiz.css);
+
+/* About */
+@import url(sections/about/_intro-section.css);
+@import url(sections/about/_team-section.css);

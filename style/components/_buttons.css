@@ -22,5 +22,5 @@
 }
 
 .button--secondary:hover {
-  background-color: var(--border-color);
+  background-color: var(--white-color-hover);
 }
