@@ -11,6 +11,7 @@
 
   <!-- css -->
   <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/sections/quizz/_quizz-menu.css">
   <!-- javascript -->
   <script src="js/main.js" defer></script>
 
@@ -20,18 +21,18 @@
 <body>
   <header class="header">
     <div class="header__container max-width">
-      <a href="#">
+      <a href="index.html">
         <img class="header__logo" src="assets/svg/logo/logo-claro.svg" alt="Logomarca do Site Segurança aos Idosos Contra Crimes Cibernéticos no Brasil" id="siteLogo">
       </a>
       <nav class="header__nav">
         <ul class="header__nav-list">
-          <li class="header__nav-item"><a href="#">Home</a></li>
+          <li class="header__nav-item"><a href="index.html">Home</a></li>
           <li class="header__nav-item"><a href="#learn">Aprenda Mais</a></li>
-          <li class="header__nav-item"><a href="#features">Sobre Nós</a></li>
+          <li class="header__nav-item"><a href="about.html">Nossa Missão</a></li>
         </ul>
       </nav>
       <div class="header__actions">
-        <a href="#quiz" class="button button--primary">Quizz</a>
+        <a href="quizz__menu.html" class="button button--primary">Quizz</a>
       </div>
     </div>
   </header>
@@ -42,7 +43,7 @@
         <h1 class="hero__title">Segurança aos Idosos Contra Crimes Cibernéticos no Brasil</h1>
         <p class="hero__subtitle">Aprenda os fundamentos da segurança da informação de forma simples e eficaz. Proteja seus dados e sua privacidade online.</p>
         <div class="hero__actions">
-          <a href="#quiz" class="button button--primary">Teste seu conhecimento</a>
+          <a href="quizz__menu.html" class="button button--primary">Teste seu conhecimento</a>
         </div>
       </div>
     </section>
@@ -77,16 +78,14 @@
     <section id="learn" class="learn max-width">
       <h2 class="learn__title">Aprenda Mais</h2>
       <p class="learn__description">Preparamos guias simples para ajudar você, sua família e amigos a se protegerem na internet. Clique em um tema para começar a aprender!</p>
-      <div class="learn__grid grid-learn-cards">
-        <!-- Card 1 -->
-        <div class="card card--learn" data-modal-trigger="modal-senhas"> <!--Direciona ao ID do modal-->
+      <div class="learn__grid">
+        <div class="card card--learn" data-modal-trigger="modal-senhas">
           <img class="card__image" src="assets/image/learn/password.jpg" alt="Mulher usando notebook">
           <div class="card__content">
             <h3 class="card__title">Crie Senhas Fortes</h3>
             <p class="card__description">Sua senha é a chave da sua casa online. Vamos te ensinar a criar chaves que só você conhece e são difíceis de copiar.</p>
           </div>
         </div>
-        <!-- Card 2 -->
         <div class="card card--learn" data-modal-trigger="modal-navegacao">
           <img class="card__image" src="assets/image/learn/safeweb.jpeg" alt="Homem mexendo em um tablet">
           <div class="card__content">
@@ -94,7 +93,6 @@
             <p class="card__description">A internet é como uma cidade grande. Mostraremos as ruas seguras para passear e quais lugares é melhor evitar.</p>
           </div>
         </div>
-        <!-- Card 3 -->
         <div class="card card--learn" data-modal-trigger="modal-redes-sociais">
           <img class="card__image" src="assets/image/learn/phishing.jpg" alt="Tela de celular com alerta de phishing">
           <div class="card__content">
@@ -105,23 +103,21 @@
       </div>
 
     </section>
-
-    <section id="quiz" class="quiz">
-      <h2 class="quiz__title">Teste seu conhecimento</h2>
-      <p class="quiz__description">Acesse nosso quizz para testar seu conhecimento a respeito dos tópicos referentes a segurança da informação.</p>
-      <a href="#" class="button button--secondary">Acessar Quizz</a>
+    <section id="quiz" class="quiz-cta">
+      <h2 class="quiz-cta__title">Teste seu conhecimento</h2>
+      <p class="quiz-cta__description">Acesse nosso quizz para testar seu conhecimento a respeito dos tópicos referentes a segurança da informação.</p>
+      <a href="quizz__menu.html" class="button button--secondary">Acessar Quizz</a>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer__container max-width">
-
       <nav class="footer__nav">
         <ul class="footer__nav-list">
-          <li class="footer__nav-item"><a href="#">Home</a></li>
-          <li class="footer__nav-item"><a href="#">Aprenda Mais</a></li>
-          <li class="footer__nav-item"><a href="#">Sobre Nós</a></li>
-          <li class="footer__nav-item"><a href="#">Quizz</a></li>
+          <li class="footer__nav-item"><a href="index.html">Home</a></li>
+          <li class="footer__nav-item"><a href="index.html#learn">Aprenda Mais</a></li>
+          <li class="footer__nav-item"><a href="about.html">Nossa Missão</a></li>
+          <li class="footer__nav-item"><a href="quizz__menu.html">Quizz</a></li>
         </ul>
       </nav>
       <p class="footer__copyright">&copy; 2025 CyberSec. Alguns Direitos Reservados.</p>

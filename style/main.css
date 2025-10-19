@@ -18,10 +18,13 @@
 @import url(sections/home/_hero.css);
 @import url(sections/home/_features.css);
 @import url(sections/home/_learn.css);
+@import url(sections/home/_quiz-cta.css);
 
 /* Quizz */
 @import url(sections/quizz/_quiz.css);
+@import url(sections/quizz/_quizz-menu.css);
 
 /* About */
 @import url(sections/about/_intro-section.css);
 @import url(sections/about/_team-section.css);
+@import url(sections/about/_about-section.css);

@@ -1,9 +1,3 @@
-<!-- 
-  Arquivo: about.html
-  Descrição: Página "Sobre Nós", com informações sobre a equipe do projeto.
-  Autor: Gemini
-  Data: 19/10/2025
--->
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -21,12 +15,12 @@
 
   <!-- JavaScript -->
   <script src="js/main.js" defer></script>
+  <script src="js/quiz.js" defer></script>
 
-  <title>Sobre Nós - Segurança da Informação</title>
+  <title>Jogo de Quizz - Segurança da Informação</title>
 </head>
 
 <body>
-  <!-- Cabeçalho reutilizado -->
   <header class="header">
     <div class="header__container max-width">
       <a href="index.html">
@@ -35,7 +29,7 @@
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item"><a href="index.html">Home</a></li>
-          <li class="header__nav-item"><a href="quizz__menu.html">Quizz</a></li>
+          <li class="header__nav-item"><a href="quizz__menu.html">Menu do Quizz</a></li>
           <li class="header__nav-item"><a href="about.html">Nossa Missão</a></li>
         </ul>
       </nav>
@@ -46,16 +40,35 @@
   </header>
 
   <main class="main">
-    <section class="about-section">
-      <div class="about-section__container max-width">
-        <h1 class="about-section__title">Nossa Missão</h1>
-        <div class="about-section__content">
-          <p>Somos um grupo de estudantes da Faculdade Drummond, unidos por um propósito em comum. Como parte de um projeto acadêmico, decidimos abraçar um tema de grande relevância social: a segurança da informação para idosos.</p>
-          <p>Nossa equipe é formada por alunos do primeiro semestre de diversos cursos da área de tecnologia, incluindo <span class="about-section__highlight">Redes de Computadores</span>, <span class="about-section__highlight">Análise e Desenvolvimento de Sistemas (ADS)</span> e <span class="about-section__highlight">Ciência da Computação</span>. Essa diversidade de conhecimentos nos permite abordar o desafio de forma completa e multidisciplinar.</p>
-          <p>O objetivo deste site é ir além de um simples trabalho acadêmico. Queremos criar uma ferramenta de conscientização e educação, capacitando o público idoso a navegar na internet com mais confiança e segurança. Acreditamos que o conhecimento é a melhor defesa contra os perigos do mundo digital.</p>
+    <!-- 
+      Container principal do jogo. A classe 'hidden' será removida pelo JS quando o jogo começar.
+    -->
+    <div class="quiz-container">
+      <div id="quiz-game" class="quiz-game">
+        <div class="quiz-game__header">
+          <h1 id="quiz-theme-title">Tema do Quizz</h1>
+          <p id="quiz-progress">Pergunta 1 de 5</p>
+        </div>
+        <h2 id="question-text">O texto da pergunta aparecerá aqui.</h2>
+        <div id="answer-buttons" class="quiz-game__answers"></div>
+        <div id="explanation" class="quiz-game__explanation hidden">
+          <p id="explanation-text"></p>
+        </div>
+        <button id="next-btn" class="button button--primary hidden">Próxima</button>
+      </div>
+
+      <!-- 
+        Tela de pontuação final. A classe 'hidden' será removida pelo JS no final do jogo.
+      -->
+      <div id="score-screen" class="quiz-score hidden">
+        <h1 class="quiz-score__title">Fim de Jogo!</h1>
+        <p id="score-text" class="quiz-score__final">Você acertou 3 de 5 perguntas.</p>
+        <div class="quiz-score__actions">
+          <button id="play-again-btn" class="button button--primary">Jogar Novamente</button>
+          <a href="quizz__menu.html" class="button button--secondary">Escolher outro tema</a>
         </div>
       </div>
-    </section>
+    </div>
   </main>
 
   <!-- Rodapé reutilizado para consistência -->
@@ -64,7 +77,6 @@
       <nav class="footer__nav">
         <ul class="footer__nav-list">
           <li class="footer__nav-item"><a href="index.html">Home</a></li>
-          <li class="footer__nav-item"><a href="index.html#learn">Aprenda Mais</a></li>
           <li class="footer__nav-item"><a href="quizz__menu.html">Quizz</a></li>
           <li class="footer__nav-item"><a href="about.html">Nossa Missão</a></li>
         </ul>

@@ -4,9 +4,13 @@
 }
 
 main > section {
-  padding: 100px 0;
+  padding: 72px 0;
 }
 
 main > .hero {
   padding: 0;
+}
+
+main {
+  padding-top: 72px;
 }

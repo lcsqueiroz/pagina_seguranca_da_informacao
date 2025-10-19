@@ -18,3 +18,18 @@
   gap: 50px;
   align-items: stretch;
 }
+/* grid quizz menu */
+.quiz-menu__options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  justify-content: center;
+  gap: 50px;
+  place-self: center;
+}
+/* grid quizz jogos */
+.quiz-game__answers {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-sm);
+}

@@ -1,0 +1,23 @@
+.quiz-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+}
+
+.quiz-cta__title {
+  color: var(--color-primary);
+  font-size: var(--font-size-h2);
+}
+
+.quiz-cta__description {
+  color: var(--color-secondary);
+  font-size: var(--font-size-lg);
+}
+
+.quiz-cta a {
+  margin: var(--spacing-sm) 0;
+  place-self: center;
+}

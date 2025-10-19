@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/main.css">
+
+  <!-- JavaScript -->
+  <script src="js/main.js" defer></script>
+
+  <title>Menu do Quizz - Segurança da Informação</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container max-width">
+      <a href="index.html">
+        <img class="header__logo" src="assets/svg/logo/logo-claro.svg" alt="Logomarca do Site" id="siteLogo">
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="index.html">Home</a></li>
+          <li class="header__nav-item"><a href="index.html#learn">Aprenda Mais</a></li>
+          <li class="header__nav-item"><a href="about.html">Nossa Missão</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="quizz__menu.html" class="button button--primary">Quizz</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="quiz-menu">
+      <div class="quiz-menu__header">
+        <h1 class="quiz-menu__title">Escolha um Tema</h1>
+        <p class="quiz-menu__description">Teste seus conhecimentos e aprenda a se proteger de golpes online.</p>
+      </div>
+
+      <!-- 
+          Opção 1: Phishing
+          - O link redireciona para a página do quiz com o parâmetro 'theme=pishing'.
+        -->
+      <div class="quiz-menu__options max-width">
+        <a href="quizz__game.html?theme=phishing" class="card card--menu">
+          <img class="card__image" src="assets/image/learn/phishing.jpg" alt="Ilustração de um ataque de phishing">
+          <div class="card__content">
+            <h2 class="card__title">Phishing</h2>
+            <p class="card__description">Aprenda a identificar e-mails e sites falsos para não cair em armadilhas.</p>
+            <span class="button button--secondary">Jogar Agora</span>
+          </div>
+        </a>
+
+        <!-- 
+          Opção 2: Malwares
+          - O link redireciona para a página do quiz com o parâmetro 'theme=malware'.
+        -->
+        <a href="quizz__game.html?theme=malware" class="card card--menu">
+          <img class="card__image" src="assets/image/learn/malware.jpg" alt="Ilustração de um vírus de computador">
+          <div class="card__content">
+            <h2 class="card__title">Malwares</h2>
+            <p class="card__description">Entenda o que são vírus, spywares e outros malwares e como se proteger deles.</p>
+            <span class="button button--secondary">Jogar Agora</span>
+          </div>
+        </a>
+
+        <!-- 
+          Opção 3: Senhas Seguras
+          - O link redireciona para a página do quiz com o parâmetro 'theme=password'.
+        -->
+        <a href="quizz__game.html?theme=password" class="card card--menu">
+          <img class="card__image" src="assets/image/learn/password.jpg" alt="Ilustração de uma senha forte">
+          <div class="card__content">
+            <h2 class="card__title">Senhas Seguras</h2>
+            <p class="card__description">Descubra como criar e gerenciar senhas fortes para proteger suas contas.</p>
+            <span class="button button--secondary">Jogar Agora</span>
+          </div>
+        </a>
+
+        <a href="quizz__game.html?theme=password" class="card card--menu">
+          <img class="card__image" src="assets/image/learn/password.jpg" alt="Ilustração de uma senha forte">
+          <div class="card__content">
+            <h2 class="card__title">Senhas Seguras</h2>
+            <p class="card__description">Descubra como criar e gerenciar senhas fortes para proteger suas contas.</p>
+            <span class="button button--secondary">Jogar Agora</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- 
+    Rodapé: Reutilizado.
+  -->
+  <footer class="footer">
+    <div class="footer__container max-width">
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a href="index.html">Home</a></li>
+          <li class="footer__nav-item"><a href="index.html#learn">Aprenda Mais</a></li>
+          <li class="footer__nav-item"><a href="about.html">Nossa Missão</a></li>
+          <li class="footer__nav-item"><a href="quizz__menu.html">Quizz</a></li>
+        </ul>
+      </nav>
+      <p class="footer__copyright">&copy; 2025 CyberSec. Alguns Direitos Reservados.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

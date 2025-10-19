@@ -1,14 +1,49 @@
 :root {
-  --font-family: Inter;
-  --font-title-color: #012d5c;
-  --font-text-color: #9ab4d4;
+  /* --- PALETA DE CORES -- */
+  --color-primary: #0f172a;
+  --color-secondary: #475569;
+  --color-background: #f6f7f8;
+  --color-button: #13a4ec;
+  --color-button-hover: #07bff7;
 
-  --primary-color: #012d5c;
-  --primary-color-hover: #00438b;
+  --color-white: #fff;
 
-  --white-color: #f2f2f2;
-  --white-color-hover: #ffffff;
+  --color-success: #155724; /* Verde para respostas corretas */
+  --color-success-bg: #d4edda; /* Fundo verde claro */
+  --color-explanation-bg: #dcf0f7;
+  --color-error: #721c24; /* Vermelho para respostas incorretas */
+  --color-error-bg: #f8d7da; /* Fundo vermelho claro */
 
-  --shadow-color: rgba(0, 0, 0, 0.1);
-  --header-blur-bg-color: rgba(1, 45, 92, 0.404);
+  --color-border: #e0e0e0; /* Cor de borda padrão */
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-backdrop: rgba(0, 0, 0, 0.5);
+  --header-blur-bg-color: rgba(1, 45, 92, 0.4);
+
+  /* --- TIPOGRAFIA --- */
+  --font-family-main: "Inter", sans-serif;
+
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-md: 1rem; /* 16px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-xl: 1.5rem; /* 24px */
+  --font-size-h3: 1.75rem; /* 28px */
+  --font-size-h2: 2.5rem; /* 40px */
+  --font-size-h1: 4rem; /* 64px */
+
+  --line-height-body: 1.6;
+  --line-height-heading: 1.2;
+
+  /* --- ESPAÇAMENTO (Baseado em 1rem = 16px) --- */
+  --spacing-xs: 0.5rem; /* 8px  */
+  --spacing-sm: 1rem; /* 16px */
+  --spacing-md: 2rem; /* 32px */
+  --spacing-lg: 4rem; /* 64px */
+  --spacing-xl: 6rem; /* 96px */
+
+  /* --- EFEITOS E BORDAS --- */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --box-shadow-main: 0 4px 15px var(--color-shadow);
+  --transition-main: all 0.3s ease;
 }

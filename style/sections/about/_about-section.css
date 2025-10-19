@@ -1,0 +1,29 @@
+.about-section {
+  padding: var(--spacing-lg) var(--spacing-md);
+  height: 100vh;
+}
+
+.about-section__container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-section__title {
+  color: var(--color-primary);
+  font-size: var(--font-size-h1);
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.about-section__content p {
+  font-size: var(--font-size-large);
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-sm);
+  line-height: var(--line-height-body);
+}
+
+.about-section__highlight {
+  color: var(--color-primary);
+  font-weight: 600;
+}

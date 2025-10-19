@@ -1,14 +1,16 @@
-.features {
-  background-color: #fafbff;
+.features__text-content {
+  padding: 0 var(--spacing-md);
 }
 
 .features__title {
-  padding: 15px 0px;
-  font-size: 50px;
+  padding: var(--spacing-sm) 0;
+  font-size: var(--font-size-h2);
+  color: var(--color-primary);
 }
 
 .features__description {
-  padding: 10px 0px;
-  font-size: 20px;
+  padding: var(--spacing-xs) 0;
+  font-size: var(--font-size-lg);
   max-width: 60ch;
+  color: var(--color-secondary);
 }

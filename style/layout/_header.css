@@ -1,15 +1,15 @@
 .header {
-  background-color: var(--white-color);
+  background-color: var(--color-white);
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  transition: background-color 0.5s ease, backdrop-filter 0.5s ease,
-    color 0.5s ease; /* efeito de transição para scrolled*/
+  z-index: 10;
+  transition: var(--transition-main);
 }
 
 .header__container {
-  padding: 20px 5px;
+  padding: var(--spacing-sm) var(--spacing-md);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,24 +17,23 @@
 
 .header__nav-list {
   display: flex;
-  gap: 50px;
+  gap: var(--spacing-md);
 }
+
 .header__nav-item a {
-  padding: 10px;
+  padding: var(--spacing-xs);
+  font-size: var(--font-size-md);
+  color: var(--color-primary);
+  transition: var(--transition-main);
 }
 
 .header__nav-item a:hover {
-  color: var(--primary-color);
+  color: var(--color-secondary);
 }
 
-/* classe para javascript */
+/* classe para javascript, aplicada no scroll */
 .header-blur {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
   background-color: var(--header-blur-bg-color);
-  backdrop-filter: blur(25px);
-  color: var(--white-color);
-  z-index: 3;
+  backdrop-filter: blur(15px);
+  box-shadow: var(--box-shadow-main);
 }
