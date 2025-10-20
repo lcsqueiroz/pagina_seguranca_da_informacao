@@ -1,7 +1,5 @@
 // Aguarda o carregamento completo do DOM antes de executar o script.
 document.addEventListener("DOMContentLoaded", () => {
-  // --- BANCO DE DADOS DE PERGUNTAS ---
-  // Cada tema (phishing, malware, password) contém uma lista de objetos de pergunta.
   const questionsData = {
     phishing: {
       title: "Phishing",
@@ -138,8 +136,6 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   };
 
-  // --- ELEMENTOS DO DOM ---
-  // Seleciona todos os elementos da interface do quiz que serão manipulados.
   const quizGameEl = document.getElementById("quiz-game");
   const scoreScreenEl = document.getElementById("score-screen");
   const themeTitleEl = document.getElementById("quiz-theme-title");
@@ -157,9 +153,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentQuestionIndex = 0;
   let score = 0;
 
-  /**
-   * Inicia o jogo: carrega as perguntas do tema e exibe a primeira questão.
-   */
   function startGame() {
     // Pega o parâmetro 'theme' da URL.
     const urlParams = new URLSearchParams(window.location.search);
