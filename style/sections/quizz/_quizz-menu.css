@@ -28,4 +28,5 @@
 
 .card--menu .button {
   margin-top: var(--spacing-xs);
+  place-self: center;
 }
