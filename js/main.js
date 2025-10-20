@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const modalTriggers = document.querySelectorAll("[data-modal-trigger]");
 
-//para cada modal na lista faça isso
 modalTriggers.forEach((trigger) => {
   const modalId = trigger.getAttribute("data-modal-trigger");
   const modal = document.getElementById(modalId);
