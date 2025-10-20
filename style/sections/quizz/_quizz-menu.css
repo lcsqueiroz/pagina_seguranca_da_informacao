@@ -1,6 +1,10 @@
 .quiz-menu {
   padding: var(--spacing-xl) 0;
 }
+.quiz-menu__options {
+  display: flex;
+  place-self: center;
+}
 
 .quiz-menu__header {
   text-align: center;
